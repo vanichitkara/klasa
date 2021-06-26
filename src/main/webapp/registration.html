@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="index.html">Klasa</a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle
+                    navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="registration.html">REGISTER</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page registration-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Registration</h2>
+                    <p></p>
+                </div>
+                <form>
+                    <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control item"
+                            type="text" id="name" placeholder="Enter Full Name"></div>
+                    <div class="mb-3"><label class="form-label" for="email">Email</label><input
+                            class="form-control item" type="email" id="email" placeholder="Enter Email Address">
+                    </div>
+                    <div class="mb-3"><label class="form-label" for="email">Password</label><input
+                            class="form-control item" type="password" id="password" placeholder="Enter Password"></div>
+                            <!--
+                            <a class="btn btn-primary" type="submit" style="width: 420px" href="dashboard.html" id="createAccount">Sign Up</a>
+                            -->
+                    <div class="text-center" style="text-align: center;">
+                        <a class="btn btn-primary d-block" role="button" href="dashboard.html" id="createAccount">Sign Up</a>
+                    </div>
+                    <div class="text-center" style="margin: 10px 0px 0px 0px;"><a href="login.html">Already have an
+                            account? Login!</a></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer style="height: 50px;color: rgb(0,5,10);background: var(--bs-dark);">
+        <input type="text" class="form-control-plaintext" readonly style="color: rgb(255,255,255);text-align: center;" value="Klasa™ © 2021 Copyright" />
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="Integration/registration.js"></script>
+</body>
+
+</html>
