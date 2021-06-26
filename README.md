@@ -3,7 +3,7 @@ Klasa is a web application where students and teachers can share resources, enga
 It's intuitive for teachers and feature rich for students, like no other existing platform.
 
 # link to the site
-// add link
+[klasa](https://klasa-website.herokuapp.com/)
 
 # features
 1. A dashboard equipped with a calendar to keep track of all events, be it assignments, discussions, announcements or resources shared by professor/teacher
