@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+        <link rel="stylesheet" href="assets/css/Animated-Hamburger-Menu.css">
+        <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
+        <link rel="stylesheet" href="assets/css/Bootstrap-Tags-Input.css">
+        <link rel="stylesheet" href="assets/css/Calendar-BS4-1.css">
+        <link rel="stylesheet" href="assets/css/Calendar-BS4.css">
+        <link rel="stylesheet" href="assets/css/Data-Table-1.css">
+        <link rel="stylesheet" href="assets/css/Data-Table.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+        <link rel="stylesheet" href="assets/css/Navigation-with-Search-1.css">
+        <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+        <link rel="stylesheet" href="assets/css/Profile-Picture-With-Badge-1.css">
+        <link rel="stylesheet" href="assets/css/Profile-Picture-With-Badge.css">
+        <link rel="stylesheet" href="assets/css/Social-Icon-Circle.css">
+        <link rel="stylesheet" href="assets/css/textarea.css">
+        <link rel="stylesheet" href="assets/css/Ultimate-Event-Calendar.css">
+        <link rel="stylesheet" href="assets/css/User-Tasks-and-User-Activity-Streams---List-Group-Component.css">
+        <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-white d-xxl-flex align-items-xxl-start clean-navbar"
+             style="background: var(--bs-primary);box-shadow: 0px 0px var(--bs-blue);color: #48ccff;filter: invert(0%) saturate(0%);">
+            <div class="container"><a class="navbar-brand logo" href="index.html">Klasa</a>
+                <button data-bs-toggle="collapse"
+                        class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                                                         data-bs-toggle="dropdown" href="#">user</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="dashboard.html">Dashboard</a><a
+                                    class="dropdown-item" href="settings.html">Settings</a><a class="dropdown-item"
+                                                                                              href="login.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-link btn-circle"
+                        style="border-radius:50px;border:1px solid black;background-color:#002649;" type="button"><i
+                        class="fa fa-star"
+                        style="color: #ffffff;font-size: 30px;margin: 0px 7px 0px 7px;"></i></button>
+            </div>
+        </nav>
+        <main class="page catalog-page">
+            <section class="clean-block clean-catalog dark">
+                <div class="container" id="top">
+                    <div class="block-heading">
+                        <h2 class="text-info">Dashboard</h2>
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="d-none d-md-block">
+                                    <div class="filters">
+                                        <div class="filter-item">
+                                            <h3>Classes</h3>
+                                            <div class="form-check"><label class="form-check-label"
+                                                                           for="formCheck-1"><a
+                                                    href="announcements.html">Physics</a></label></div>
+                                            <div class="form-check"><label class="form-check-label"
+                                                                           for="formCheck-2">Chemistry</label></div>
+                                            <div class="form-check"><label class="form-check-label"
+                                                                           for="formCheck-3">Maths</label></div>
+                                            <div class="form-check"><label class="form-check-label"
+                                                                           for="formCheck-4">Computer Science</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-item">
+                                            <div class="btn-group dropdown">
+                                                <button class="btn btn-primary" type="button">Archived Classes</button>
+                                                <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" type="button"></button>
+                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">English</a><a class="dropdown-item" href="#">Social Science</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="filter-item"></div>
+                                    </div>
+                                </div>
+                                <div class="d-md-none"><a class="btn btn-link d-md-none filter-collapse"
+                                                          data-bs-toggle="collapse"
+                                                          aria-expanded="false" aria-controls="filters" href="#filters"
+                                                          role="button">Classes<i
+                                        class="icon-arrow-down filter-caret"></i></a>
+                                    <div class="collapse" id="filters">
+                                        <div class="filters">
+                                            <div class="filter-item">
+                                                <h3>Classes</h3>
+                                                <div class="form-check"><label class="form-check-label"
+                                                                               for="formCheck-1"><a
+                                                        href="announcements.html">Physics</a></label></div>
+                                                <div class="form-check"><label class="form-check-label"
+                                                                               for="formCheck-2">Chemistry</label></div>
+                                                <div class="form-check"><label class="form-check-label"
+                                                                               for="formCheck-3">Maths</label></div>
+                                                <div class="form-check"><label class="form-check-label"
+                                                                               for="formCheck-4">Computer
+                                                    Science</label></div>
+                                            </div>
+                                            <div class="filter-item">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle"
+                                                            aria-expanded="false"
+                                                            data-bs-toggle="dropdown" type="button"
+                                                            style="margin: -50px 0px 0px 0px;">Archived
+                                                        Classes
+                                                    </button>
+                                                    <div class="dropdown-menu"><a class="dropdown-item"
+                                                                                  href="#">English</a><a
+                                                            class="dropdown-item"
+                                                            href="#">Social Science</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div style="margin:46px;">
+                                    <div class="row row-striped">
+                                        <div class="col-2 text-center ">
+                                            <h1 class="display-4 "><span class="badge bg-primary" id="dateOfCalendar">14</span></h1>
+                                            <h2>JUNE</h2>
+                                        </div>
+                                        <div class="col-10" id="listOfEventsOnTop">
+                                            <!--                    <h3 class="text-uppercase"><strong>Valentine's Day</strong></h3>-->
+<!--                                            <ul class="list-inline">-->
+<!--                                                &lt;!&ndash;                      <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Wednesday</li>&ndash;&gt;-->
+<!--                                                <li class="list-inline-item"><i class="fa fa-clock-o"-->
+<!--                                                                                aria-hidden="true"></i> 18:30 PM-->
+<!--                                                </li>-->
+<!--                                                <li class="list-inline-item"><i class="fa fa-location-arrow"-->
+<!--                                                                                aria-hidden="true"></i> Restaurant-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                            <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod-->
+<!--                                                tempor incididunt ut labore-->
+<!--                                                et dolore magna aliqua.</p>-->
+<!--                                            &lt;!&ndash;                    <h3 class="text-uppercase"><strong>Valentine's Day</strong></h3>&ndash;&gt;-->
+<!--                                            <ul class="list-inline">-->
+<!--                                                &lt;!&ndash;                      <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Wednesday</li>&ndash;&gt;-->
+<!--                                                <li class="list-inline-item"><i class="fa fa-clock-o"-->
+<!--                                                                                aria-hidden="true"></i> 18:30 PM-->
+<!--                                                </li>-->
+<!--                                                <li class="list-inline-item"><i class="fa fa-location-arrow"-->
+<!--                                                                                aria-hidden="true"></i> Restaurant-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                            <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod-->
+<!--                                                tempor incididunt ut labore-->
+<!--                                                et dolore magna aliqua.</p>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bootstrap_calendar">
+                    <div class="container py-5">
+                        
+                        <!-- Calendar -->
+                        <div class="calendar shadow bg-white p-5">
+                            <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                                <h2 class="month font-weight-bold mb-0 text-uppercase"> &nbsp;June 2021</h2>
+                            </div>
+                            <p class="font-italic text-muted mb-5">No events for this day.</p>
+                            <ol class="day-names list-unstyled">
+                                <li class="font-weight-bold text-uppercase">Sun</li>
+                                <li class="font-weight-bold text-uppercase">Mon</li>
+                                <li class="font-weight-bold text-uppercase">Tue</li>
+                                <li class="font-weight-bold text-uppercase">Wed</li>
+                                <li class="font-weight-bold text-uppercase">Thu</li>
+                                <li class="font-weight-bold text-uppercase">Fri</li>
+                                <li class="font-weight-bold text-uppercase">Sat</li>
+                            </ol>
+                            
+                            <ol class="days list-unstyled" id="dateList">
+                                <li class="outside">
+                                    <div class="date">30</div>
+                                </li>
+                                <li class="outside">
+                                    <div class="date">31</div>
+                                </li>
+                                <li><a href="#top">
+                                    <button class="btn btn-light"
+                                            style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                            type="button">
+                                        <div class="date">1</div>
+                                        <div class="event bg-primary">Event Name</div>
+                                    </button>
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">2</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">3</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">4</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">5</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">6</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">7</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">8</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">9</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">10</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">11</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">12</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">13</div>
+                                            <div class="event bg-warning">Event Name</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">14</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">15</div>
+                                            <div class="event bg-success">Event Name</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">16</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">17</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">18</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">19</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">20</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">21</div>
+                                            <div class="event bg-primary">Event Name</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">22</div>
+                                            <div class="event bg-info">Event with Longer Name</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">23</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">24</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">25</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">26</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">27</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">28</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">29</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#top">
+                                        <button class="btn btn-light"
+                                                style="text-align: left; width: 130px; height: 100px; margin: 0px;"
+                                                type="button">
+                                            <div class="date">30</div>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="outside">
+                                    <div class="date">1</div>
+                                </li>
+                                <li class="outside">
+                                    <div class="date">2</div>
+                                </li>
+                                <li class="outside">
+                                    <div class="date">3</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer style="height: 50px;color: rgb(0,5,10);background: var(--bs-dark);">
+            <input type="text" class="form-control-plaintext" readonly
+                   style="color: rgb(255,255,255);text-align: center;" value="Klasa™ © 2021 Copyright"/>
+        </footer>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+        <script src="assets/js/vanilla-zoom.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/Bootstrap-Tags-Input-1.js"></script>
+        <script src="assets/js/Bootstrap-Tags-Input.js"></script>
+        <script src="assets/js/Ultimate-Event-Calendar.js"></script>
+        <script src="./Integration/dashboard.js"></script>
+    </body>
+
+</html>
