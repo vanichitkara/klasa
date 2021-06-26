@@ -67,7 +67,7 @@ public class ResourceService
         
         for (int i = 0; i < 15; i++)
         {
-        	dates[i]= LocalDate.of(2021, 6, i+1);
+        	dates[i]= LocalDate.of(2021, 6, i+15);
         	
         }        
         
@@ -92,14 +92,17 @@ public class ResourceService
         link [2] = "https://bygus.com/physics/";
         link [0] = "https://en.wikpedia.org/wiki/";
         
-        for(int i =0; i<15; i++) 
+        for(int i =0; i<30; i++)
         {
-        	Resource Re = new Resource(SNo[i], link[i % 3], resource[i], dates[i], times[i]);
+        	Resource Re = new Resource(i + 1, link[i % 3], resource[i / 2], dates[i / 2], times[i / 2]);
         	addResource(Re);
             System.out.println(Re);
         }
         
-
+        resource = null;
+        link = null;
+        times = null;
+        dates = null;
         return resourceRepository.findAll();
     }
 

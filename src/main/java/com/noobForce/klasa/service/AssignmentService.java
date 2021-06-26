@@ -54,13 +54,13 @@ public class AssignmentService
         Title[13] = "Lab-Assignment-4";
         Title[14] = "Quiz-9";
         
-        for (int i = 0; i <6 ; i++)
+        for (int i = 0; i <3 ; i++)
         {
         	Status[i] = false;
         	
         }
         
-        for (int i = 6; i <15 ; i++)
+        for (int i = 3; i <15 ; i++)
         {
         	Status[i] = true;
         	
@@ -74,18 +74,21 @@ public class AssignmentService
         for (int i = 0; i < 15; i++)
         {
         	AssignedOn[i]= LocalDate.of(2021, 6, i+1);
-        	DueOn[i]= LocalDate.of(2021, 6, i+10);
+        	DueOn[i]= LocalDate.of(2021, 6, i+15);
         }
 
-        for(int i =0; i<15; i++) 
+        for(int i =0; i<30; i++)
         {
-        	Assignment ass = new Assignment(SNo[i], AssignedOn[i], DueOn[i], Status[i], Title[i]);
-        	
+        	Assignment ass = new Assignment(i + 1, AssignedOn[i / 2], DueOn[i / 2], Status[i / 2], Title[i / 2]);
         	addAssignment(ass);
         }
         
         
         
+        ////
+        AssignedOn = null;
+        DueOn = null;
+        Title = null;
         return assignmentRepository.findAll();
     }
     

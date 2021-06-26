@@ -9,10 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class AnnouncementService
@@ -40,18 +37,19 @@ public class AnnouncementService
         deleteAnnouncement();
         String[] profnames = new String[3];
         String[] announce = new String[15];
-        LocalDate[] dates = new LocalDate[15];
-        LocalTime[] times = new LocalTime[15];
+        LocalDate[] dates = new LocalDate[25];
+        LocalTime[] times = new LocalTime[25];
         
-        int[] d = new int[15];
+        int[] d = new int[25];
         Random r = new Random();
         
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i < 25; i++)
             d[i] = Math.abs(r.nextInt() % 27) + 1;
         
         Arrays.sort(d);
+//        Arrays.sort(d, Collections.reverseOrder());
         
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 25; i++) {
             dates[i] = LocalDate.of(2021, 6, d[i]);
             times[i] = LocalTime.of(Math.abs(r.nextInt() % 12) + 1, Math.abs(r.nextInt() % 60));
         }
@@ -124,12 +122,17 @@ public class AnnouncementService
         announce[14] = "One hour was extended by one faculty member because a lot of her students were having uploading issues. I could not receive the decision in time, so could not extend your deadline in time.";
         
         int start = Math.abs(r.nextInt() % 15);
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 25; i++) {
             int x = Math.abs(r.nextInt() % 3);
             Announcement an = new Announcement(profnames[x], announce[(start++) % 15], dates[i], times[i]);
             addAnnouncement(an);
         }
+        addAnnouncement(new Announcement(profnames[0], announce[2], LocalDate.of(2021, 6, 26), times[0]));
+        addAnnouncement(new Announcement(profnames[1], announce[3], LocalDate.of(2021, 6, 27), times[1]));
         announce = null;
+        dates = null;
+        times = null;
+        d = null;
         return announcementRepository.findAll();
     }
     
